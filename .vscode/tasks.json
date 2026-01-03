@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Build Innie Scheduler (GCC)",
+            "label": "Build Arena Allocator (GCC)",
             "command": "gcc",
             "args": [
                 "-Wall",
@@ -11,6 +11,7 @@
                 "-g",
                 "-I${workspaceFolder}/include",
                 "${workspaceFolder}/src/*.c",
+                "${workspaceFolder}/test/*.c",
                 "-o",
                 "${workspaceFolder}/build/arena-allocator.exe",
                 "-pthread"
